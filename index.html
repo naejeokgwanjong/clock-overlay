@@ -13,7 +13,7 @@
 
     #clock {
       font-family: Arial, sans-serif;
-      font-size: 36px;
+      font-size: 48px;
       font-weight: bold;
       color: black;
       background: transparent;
@@ -34,9 +34,8 @@
       const day = days[now.getDay()];
       const hours = String(now.getHours()).padStart(2, '0');
       const minutes = String(now.getMinutes()).padStart(2, '0');
-      const seconds = String(now.getSeconds()).padStart(2, '0');
 
-      const timeString = `${year}/${month}/${date} (${day}) ${hours}:${minutes}:${seconds}`;
+      const timeString = `${year}/${month}/${date} (${day}) ${hours}:${minutes}`;
       document.getElementById('clock').textContent = timeString;
     }
 
